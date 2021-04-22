@@ -20,19 +20,19 @@ export default class Business extends React.Component {
         return (
           <div className="Business">
             <div className="image-container">
-              <img src={business.this.imageSrc} alt="" />
+              <img src={business.imageSrc} alt="" />
             </div>
-            <h2>{business.this.name}</h2>
+            <h2>{business.name}</h2>
             <div className="Business-information">
               <div className="Business-address">
-                <p>{business.this.address}</p>
-                <p>{business.this.city}</p>
-                <p>{business.this.zipCode}</p>
+                <p>{business.address}</p>
+                <p>{business.city}</p>
+                <p>{business.zipCode}</p>
               </div>
               <div className="Business-reviews">
-                <h3>{business.this.category}</h3>
-                <h3 className="rating">{business.this.rating}</h3>
-                <p>{business.this.reviewCount} reviews</p>
+                <h3>{business.category}</h3>
+                <h3 className="rating">{business.rating}</h3>
+                <p>{business.reviewCount} reviews</p>
               </div>
             </div>
           </div>
