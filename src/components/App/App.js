@@ -30,7 +30,6 @@ export default class App extends React.Component {
   }
 
   searchYelp(term, location, sortBy) {
-    console.log(`${term} ${location} ${sortBy}`)
     Yelp.search(term, location, sortBy).then(businesses => {
       return this.setState({businesses: businesses});
     })
