@@ -1,5 +1,4 @@
-const apiKey =
-  "f2t8SpSOM3amvv77zv-_42OwZy6HRQZIvHNbaRYLUX0geXE7Ei4Su0RV-eBVNrkIlnJBCE58DQE2m0xyIkm1LSz9HsCNILLYahFtXlCqkfXiIm7Ws9UUJjFclH-HYHYx";
+const apiKey = `${process.env.RAVENOUS_APP_YELP_API_KEY}`;
 
 export const Yelp = {
   search(term, location, sortBy) {
