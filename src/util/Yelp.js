@@ -1,7 +1,8 @@
-const apiKey = "";
+const apiKey =
+  "f2t8SpSOM3amvv77zv-_42OwZy6HRQZIvHNbaRYLUX0geXE7Ei4Su0RV-eBVNrkIlnJBCE58DQE2m0xyIkm1LSz9HsCNILLYahFtXlCqkfXiIm7Ws9UUJjFclH-HYHYx";
 
 export const Yelp = {
-  searchYelp(term, location, sortBy) {
+  search(term, location, sortBy) {
     // temporarily bypass CORS restrictions https://cors-anywhere.herokuapp.com/corsdemo
     return fetch(
       `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`,
@@ -17,10 +18,11 @@ export const Yelp = {
         // to ensure a valid response has been returned from YelpAPI
         if (jsonResponse.businesses) {
           return jsonResponse.businesses.map((business) => {
+              console.log(business.categories[0].alias);
             return {
               rating: business.rating,
               id: business.id,
-              category: business.categories.restuarants.title,
+              category: business.categories[0].title,
               reviewCount: business.review_count,
               name: business.name,
               url: business.url,
