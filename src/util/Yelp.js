@@ -17,7 +17,6 @@ export const Yelp = {
         // to ensure a valid response has been returned from YelpAPI
         if (jsonResponse.businesses) {
           return jsonResponse.businesses.map((business) => {
-              console.log(business.categories[0].alias);
             return {
               rating: business.rating,
               id: business.id,
