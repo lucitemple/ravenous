@@ -1,4 +1,4 @@
-const apiKey = `${process.env.RAVENOUS_APP_YELP_API_KEY}`;
+const apiKey = `${process.env.REACT_APP_YELP_API_KEY}`;
 
 export const Yelp = {
   search(term, location, sortBy) {
