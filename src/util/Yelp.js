@@ -6,9 +6,9 @@ export const Yelp = {
   search(term, location, sortBy) {
     // temporarily bypass CORS restrictions https://cors-anywhere.herokuapp.com/corsdemo
     return fetch(
-      `https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`,
+      `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`,
       {
-/*         method: "GET",
+        /*         method: "GET",
         mode: "no-cors", */
         headers: {
           Authorization: `Bearer ${apiKey}`,
