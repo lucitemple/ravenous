@@ -6,6 +6,7 @@ export const Yelp = {
     return fetch(
       `https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`,
       {
+        method: 'GET',
         mode: "no-cors",
         headers: {
           Authorization: `Bearer ${apiKey}`,
