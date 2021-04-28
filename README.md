@@ -2,7 +2,8 @@
 [Ravenous](https://lucitemple.github.io/ravenous/) is a restuarant search directory:
 - users search for an eatery by *term* and *location*
 - users prioritise search by *best match*, *highest rated*, or *most reviewed*
-- search results are displayed visually as cards, detailing each business's image, name, address, rating, number of reviews and food category.
+- search results are displayed visually as cards, detailing each business's image, name, address, rating, number of reviews and food category
+- responsive SPA web app
 
 This project was built as part of Codecademy Pro's [Create a Front-End App with React](https://www.codecademy.com/paths/build-web-apps-with-react/tracks/bwa-ajax-requests-and-api-interactions/modules/bwa-ravenous-part-four/projects/interacting-with-yelp-api) skill path. Webdesign and assets belong to Codecademy.
 
