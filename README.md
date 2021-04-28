@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# About [Ravenous](https://lucitemple.github.io/ravenous/)
+[Ravenous](https://lucitemple.github.io/ravenous/) is a restuarant search directory:
+- users search for an eatery by *term* and *location*
+- users prioritise search by *best match*, *highest rated*, or *most reviewed*
+- search results are displayed visually as cards, detailing each business's image, name, address, rating, number of reviews and food category.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was built as part of Codecademy Pro's [Create a Front-End App with React](https://www.codecademy.com/paths/build-web-apps-with-react/tracks/bwa-ajax-requests-and-api-interactions/modules/bwa-ravenous-part-four/projects/interacting-with-yelp-api) skill path. Webdesign and assets belong to Codecademy.
 
-## Available Scripts
+## Technologies:
+- React.js 
+- Yelp API
+- HTML, CSS, JavaScript
+- Create React App
+- cors-anywhere
+- node.js & npm
 
-In the project directory, you can run:
+### Warning regarding cors-anywhere
+Please note that [cors-anywhere](https://cors-anywhere.herokuapp.com/corsdemo) is used as a temporary workaround to CORS related issues which occur when developing a front-end app without a backend. In a commercial environment a project would have a backend and not need this CORS workaround.
 
-### `npm start`
+The limitation of cors-anywhere is that access to this service is temporary. It runs out. Which stops the API from working, until access is requested manually from [cors-anywhere](https://cors-anywhere.herokuapp.com/corsdemo). Access lasts maybe one or two days only. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It is fine to use as a stop-gap in development, or for people like myself who are building sample projects to develop and practice skills rather than for serious use, however is not a long term solution.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+### Create React App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can learn more in the [Create React App documentation](https://create-react-app.dev/docs/getting-started).
 
-### `npm run build`
+## Using this project
+To run this project:
+* you will need a node environment 
+* clone or fork this project
+* install npm in the root of the project directory
+* to run the app in development mode, in the project directory run <code>npm start</code> and open [http://localhost:3000](http://localhost:3000) to view it in the browser.   
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
